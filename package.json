@@ -1,0 +1,45 @@
+{
+    "name": "simple-seed",
+    "description": "Seed Framework for react applications",
+    "author": "Yotam Madmon <madmonyotam@gmail.com>",
+    "contributors": [
+        "Marcos Laredo <marcoslaredo@gmail.com>",
+        "Ziv Zerr <downzed@gmail.com>"
+    ],
+    "keywords": [
+        "seed",
+        "framework",
+        "react",
+        "components"
+    ],
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/marcoslaredo/simple-seed.git"
+    },
+    "license": "ISC",
+    "private": false,
+    "version": "0.0.6",
+    "main": "dist/index.js",
+    "scripts": {
+        "start": "npm run watch",
+        "watch": "webpack --mode development --watch --progress --hide-modules",
+        "publishNpm": "SET NODE_ENV=production && if exist dist rmdir /S /Q dist && mkdir dist && npx babel src/Base --out-dir dist --copy-files",
+        "build": "webpack --mode production"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.4",
+        "@babel/preset-env": "^7.4.4",
+        "@babel/preset-react": "^7.0.0",
+        "axios": "^0.18.0",
+        "babel-loader": "^8.0.5",
+        "baobab": "^2.5.2",
+        "lodash": "^4.17.11",
+        "prop-types": "^15.7.2",
+        "webpack": "^4.30.0",
+        "webpack-cli": "^3.3.2"
+    },
+    "dependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    }
+}
