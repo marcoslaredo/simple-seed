@@ -1,7 +1,7 @@
 var seed = require('./constructor.js');
 var componentMixin = require('./componentMixin')
 
-var yourSeed = new seed({
+const SimpleSeed = new seed({
     plugins: [
         require('./seedPlugins/request'),
         require('./seedPlugins/Tree'),
@@ -16,5 +16,5 @@ var yourSeed = new seed({
     }
 });
 
-yourSeed.imports.ComponentMixin = componentMixin(yourSeed);
-module.exports = yourSeed;
+SimpleSeed.imports.ComponentMixin = componentMixin(SimpleSeed);
+export default SimpleSeed;
