@@ -1,10 +1,19 @@
 {
     "name": "simple-seed",
     "description": "Seed Framework for react applications",
-    "author": "Yotam Madmon <madmonyotam@gmail.com>",
+    "author":         {
+        "email": "madmonyotam@gmail.com",
+        "name": "Yotam Madmon"
+    },
     "contributors": [
-        "Marcos Laredo <marcoslaredo@gmail.com>",
-        "Ziv Zerr <downzed@gmail.com>"
+        {
+            "email": "marcoslaredo@gmail.com",
+            "name": "Marcos Laredo"
+        },
+        {
+            "email": "downzed@gmail.com",
+            "name": "Ziv Zerr"
+        }
     ],
     "keywords": [
         "seed",
