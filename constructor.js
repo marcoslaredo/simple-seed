@@ -16,7 +16,7 @@ class Seed {
 
         var seed = this;
 
-        window.seed = seed;
+        if (window) window.seed = seed;
         seed.name = options.name || 'seed';
         seed.events = {};
         seed.components = {};
