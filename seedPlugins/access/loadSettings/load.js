@@ -1,11 +1,5 @@
-import { groupBy } from 'lodash';
-// const config = {
-//   dimensions: require('../../../../../config/dimensions/default.json'),
-//   theme: require('../../../../../config/theme/default.json'),
-//   icons: require('../../../../../config/icons/default.json'),
-//   general: require('../../../../../config/general/default.json'),
-  
-// }
+var { groupBy } = require('lodash');
+
 module.exports = {
     name: "loadSettings",
     dependencies: [ ],

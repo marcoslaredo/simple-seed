@@ -1,4 +1,4 @@
-import { isNaN, toNumber } from 'lodash';
+var { isNaN, toNumber } = require('lodash');
 
 var mixin = (seed)=> {
 

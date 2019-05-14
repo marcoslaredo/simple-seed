@@ -1,7 +1,7 @@
 var seed = require('./constructor.js');
 var componentMixin = require('./componentMixin')
 
-const Seed = new seed({
+var Seed = new seed({
     plugins: [
         require('./seedPlugins/request'),
         require('./seedPlugins/Tree'),
