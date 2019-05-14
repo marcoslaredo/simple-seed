@@ -16,11 +16,8 @@
     "license": "ISC",
     "private": false,
     "version": "0.0.6",
-    "main": "dist/index.js",
+    "main": "index.js",
     "scripts": {
-        "start": "npm run watch",
-        "watch": "webpack --mode development --watch --progress --hide-modules",
-        "publish": "SET NODE_ENV=production && if exist dist rmdir /S /Q dist && mkdir dist && npx babel src --out-dir dist --copy-files",
         "build": "webpack --mode production"
     },
     "peerDependencies": {
