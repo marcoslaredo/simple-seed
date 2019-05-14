@@ -17,4 +17,4 @@ const Seed = new seed({
 });
 
 Seed.imports.ComponentMixin = componentMixin(Seed);
-export default Seed;
+module.exports = Seed;
