@@ -23,6 +23,21 @@ var mixin = (seed)=> {
                 this.cursor[key] = seed.select(path);
             }
         },
+        
+        serialize( data ) {
+            let result;
+            let errorText = seed.translate('fail to serialize oblect');
+
+            try {
+                result = JSON.parse(JSON.stringify( data ));
+            } catch (error) {
+                seed.emit('notify', { text: errorText, alertKind: 'error' });    
+                console.error(errorText);
+                return null;
+            }
+
+            return result;
+        },
 
         safeState(state, callback){
             if(this.isUnmounted) return;
