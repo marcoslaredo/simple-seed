@@ -3,7 +3,7 @@ module.exports = {
     tree: {
         icons:{},
         theme:{},
-        dim:{},
+        dimensions:{},
         general:{},
     },
 
